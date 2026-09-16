@@ -6,11 +6,11 @@
 const works = [
   {
     title: 'うどん箱太郎',
-    category: '',
-    year: '',
-    image: 'images/works-001.png',
-    description: '',
-    youtube: '',
+    category: 'お店',
+    year: '2021',
+    image: 'works001.jpg',
+    description: '福岡市東区松崎にある最狂の脂うどんを提供する「うどん箱太郎」さんのテーマソングを多数制作させていただきました。',
+    youtube: 'https://www.youtube.com/watch?v=-Vvu9dahInE',
     isVisible: true
   },
   {
