@@ -24,6 +24,53 @@ if (liveList) {
   }).join('');
 }
 
+const worksTrack = document.querySelector('#worksTrack');
+
+if (worksTrack && typeof works !== 'undefined') {
+  const visibleWorks = works.filter((work) => work.isVisible !== false).slice().reverse();
+
+  worksTrack.innerHTML = visibleWorks.map((work) => `
+    <article class="work-card">
+      <div class="work-card__media">
+        <img src="${work.image}" alt="${work.title}の作品画像" loading="lazy" onerror="this.parentElement.hidden=true">
+      </div>
+      <div class="work-card__body">
+        ${work.year ? `<p class="work-card__year">${work.year}</p>` : ''}
+        <h3>${work.title}</h3>
+        ${work.category ? `<p class="work-card__category">${work.category}</p>` : ''}
+        ${work.description ? `<p class="work-card__description">${work.description}</p>` : ''}
+        ${work.youtube ? `<a class="work-card__link" href="${work.youtube}" target="_blank" rel="noopener noreferrer">▶ YouTubeで聴く</a>` : ''}
+      </div>
+    </article>
+  `).join('');
+
+  const previousButton = document.querySelector('.works-slider__button--prev');
+  const nextButton = document.querySelector('.works-slider__button--next');
+
+  const updateWorksButtons = () => {
+    if (!previousButton || !nextButton) return;
+    const maxScroll = worksTrack.scrollWidth - worksTrack.clientWidth;
+    previousButton.disabled = worksTrack.scrollLeft <= 4;
+    nextButton.disabled = worksTrack.scrollLeft >= maxScroll - 4;
+  };
+
+  const moveWorks = (direction) => {
+    const card = worksTrack.querySelector('.work-card');
+    if (!card) return;
+    const gap = parseFloat(getComputedStyle(worksTrack).gap) || 0;
+    worksTrack.scrollBy({
+      left: direction * (card.getBoundingClientRect().width + gap),
+      behavior: reduceMotion ? 'auto' : 'smooth'
+    });
+  };
+
+  previousButton?.addEventListener('click', () => moveWorks(-1));
+  nextButton?.addEventListener('click', () => moveWorks(1));
+  worksTrack.addEventListener('scroll', updateWorksButtons, { passive: true });
+  window.addEventListener('resize', updateWorksButtons);
+  updateWorksButtons();
+}
+
 const reveals = document.querySelectorAll('.reveal');
 
 const observer = new IntersectionObserver((entries) => {
