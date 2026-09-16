@@ -1,34 +1,27 @@
-const liveEvents = [
-  {
-    monthDay: '10.24',
-    weekday: 'SAT',
-    year: '2026',
-    title: 'fun gumbo<br>「馬力音〜UMANONE〜」',
-    venue: 'BLOWIN’ NEW SOUL',
-    area: '福岡市東区馬出',
-    start: '18:00',
-    appearance: '18:50〜19:10',
-    price: '2,000円＋別途オーダー'
-  }
-];
-
 const liveList = document.querySelector('#liveList');
 
 if (liveList) {
-  liveList.innerHTML = liveEvents.slice(0, 3).map((event) => `
-    <article class="notice-board">
+  const visibleEvents = liveEvents.filter((event) => event.isVisible).slice(0, 3);
+
+  liveList.innerHTML = visibleEvents.map((event, index) => {
+    const isCompact = index > 0;
+
+    return `
+    <article class="notice-board${isCompact ? ' is-compact' : ' is-featured'}">
       <p class="notice-board__date"><strong>${event.monthDay}</strong><span>${event.weekday}<br>${event.year}</span></p>
       <div class="notice-board__body">
         <h3>${event.title}</h3>
         <dl>
           <div><dt>会場</dt><dd>${event.venue}<br><small>${event.area}</small></dd></div>
-          <div><dt>開演</dt><dd>${event.start}</dd></div>
+          ${isCompact ? '' : `<div><dt>開演</dt><dd>${event.start}</dd></div>`}
           <div><dt>出演</dt><dd>a fool hippo<br><strong>${event.appearance}</strong></dd></div>
-          <div><dt>料金</dt><dd>${event.price}</dd></div>
+          <div class="notice-board__performers"><dt>共演</dt><dd>${event.coPerformers || '後日発表'}</dd></div>
+          ${isCompact ? '' : `<div><dt>料金</dt><dd>${event.price}</dd></div>`}
         </dl>
       </div>
     </article>
-  `).join('');
+  `;
+  }).join('');
 }
 
 const reveals = document.querySelectorAll('.reveal');
