@@ -26,7 +26,7 @@ const liveEvents = [
     appearance: '19:10〜19:30',
     price: '料金情報が入ります',
     coPerformers: '共演者A／共演者B／共演者C',
-    isVisible: true
+    isVisible: false
   },
   {
     monthDay: '12.05',
@@ -39,6 +39,6 @@ const liveEvents = [
     appearance: '18:00〜18:20',
     price: '料金情報が入ります',
     coPerformers: '共演者D／共演者E',
-    isVisible: true
+    isVisible: false
   }
 ];
