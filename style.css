@@ -365,7 +365,7 @@ h1 {
 .work-card__body { display: flex; flex-direction: column; min-height: 210px; padding: 20px; }
 .work-card__year { margin: 0 0 5px; font-size: .78rem; letter-spacing: .08em; }
 .work-card h3 { margin: 0 0 9px; font-size: 1.35rem; line-height: 1.45; }
-.work-card__description { margin: 0 0 18px; font-size: .92rem; line-height: 1.75; }
+.work-card__description { min-height: 7em; margin: 0 0 18px; font-size: .92rem; line-height: 1.75; }
 .work-card__link { width: fit-content; margin-top: auto; padding-bottom: 3px; border-bottom: 2px solid var(--ink); font-weight: 500; text-decoration: none; }
 .works-contact { margin-top: 54px; padding-top: 36px; border-top: 2px dashed var(--ink); text-align: center; }
 .works-contact h3 { margin: 0 0 15px; font-size: 1.55rem; }

@@ -37,7 +37,7 @@ if (worksTrack && typeof works !== 'undefined') {
       <div class="work-card__body">
         ${work.year ? `<p class="work-card__year">${work.year}</p>` : ''}
         <h3>${work.title}</h3>
-        ${work.description ? `<p class="work-card__description">${work.description}</p>` : ''}
+        <p class="work-card__description">${work.description || ''}</p>
         ${work.youtube ? `<a class="work-card__link" href="${work.youtube}" target="_blank" rel="noopener noreferrer">▶ YouTubeで聴く</a>` : ''}
       </div>
     </article>
