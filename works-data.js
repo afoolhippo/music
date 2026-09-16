@@ -14,26 +14,18 @@ const works = [
   },
   {
     title: '筥崎ぼたん',
-    year: '',
+    year: '2024',
     image: 'works002.png',
-    description: '',
-    youtube: '',
-    isVisible: true
-  },
-  {
-    title: 'ハコさんぽマップ',
-    year: '',
-    image: 'works-003.jpg',
-    description: '',
-    youtube: '',
+    description: '福岡市東区箱崎の筥崎宮のすぐそばにて営業されている、米粉お菓子などを販売されている「筥崎ぼたん」さんの曲を制作させていただきました。',
+    youtube: 'https://youtu.be/Sj5ONaqpw38',
     isVisible: true
   },
   {
     title: 'めん処やま志',
-    year: '',
-    image: 'works004.jpg',
-    description: '',
-    youtube: '',
+    year: '飯塚にある蕎麦屋「やま志」さんのテーマソングを制作させて頂きました。',
+    image: 'works003.jpg',
+    description: '2023',
+    youtube: 'https://youtu.be/ggLOTCnbL14',
     isVisible: true
   },
 ];
