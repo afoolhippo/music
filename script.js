@@ -27,7 +27,7 @@ if (liveList) {
 const worksTrack = document.querySelector('#worksTrack');
 
 if (worksTrack && typeof works !== 'undefined') {
-  const visibleWorks = works.filter((work) => work.isVisible !== false).slice().reverse();
+  const visibleWorks = works.filter((work) => work.isVisible !== false);
 
   worksTrack.innerHTML = visibleWorks.map((work) => `
     <article class="work-card">
@@ -37,7 +37,6 @@ if (worksTrack && typeof works !== 'undefined') {
       <div class="work-card__body">
         ${work.year ? `<p class="work-card__year">${work.year}</p>` : ''}
         <h3>${work.title}</h3>
-        ${work.category ? `<p class="work-card__category">${work.category}</p>` : ''}
         ${work.description ? `<p class="work-card__description">${work.description}</p>` : ''}
         ${work.youtube ? `<a class="work-card__link" href="${work.youtube}" target="_blank" rel="noopener noreferrer">▶ YouTubeで聴く</a>` : ''}
       </div>
