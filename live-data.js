@@ -3,19 +3,6 @@
 // isVisible: true で表示、false で非表示になります。
 const liveEvents = [
   {
-    monthDay: '10.24',
-    weekday: 'SAT',
-    year: '2026',
-    title: 'fun gumbo「馬力音〜UMANONE〜」',
-    venue: 'BLOWIN’ NEW SOUL',
-    area: '福岡市東区馬出2-20-30',
-    start: '18:00',
-    appearance: '18:50〜19:10',
-    price: '2,000円＋別途オーダー',
-    coPerformers: 'Aa／ATAMANAX／小林ボードウォーク／マルツカ道／アシッドショウ会／いすけ（北九州）／福崎正人',
-    isVisible: true
-  },
-  {
     monthDay: '10.20',
     weekday: 'TUE',
     year: '2026',
@@ -28,6 +15,21 @@ const liveEvents = [
     coPerformers: 'イフマサカ/フアリナ/kiko(KIKOBAND)/鈴木卓也 司会とDJ)ボギー',
     isVisible: true
   },
+
+  {
+    monthDay: '10.24',
+    weekday: 'SAT',
+    year: '2026',
+    title: 'fun gumbo「馬力音〜UMANONE〜」',
+    venue: 'BLOWIN’ NEW SOUL',
+    area: '福岡市東区馬出2-20-30',
+    start: '18:00',
+    appearance: '18:50〜19:10',
+    price: '2,000円＋別途オーダー',
+    coPerformers: 'Aa／ATAMANAX／小林ボードウォーク／マルツカ道／アシッドショウ会／いすけ（北九州）／福崎正人',
+    isVisible: true
+  },
+
   {
     monthDay: '12.05',
     weekday: 'SAT',
