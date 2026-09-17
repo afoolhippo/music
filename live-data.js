@@ -8,7 +8,7 @@ const liveEvents = [
     year: '2026',
     title: 'fun gumbo「馬力音〜UMANONE〜」',
     venue: 'BLOWIN’ NEW SOUL',
-    area: '福岡市東区馬出',
+    area: '福岡市東区馬出2-20-30',
     start: '18:00',
     appearance: '18:50〜19:10',
     price: '2,000円＋別途オーダー',
@@ -16,17 +16,17 @@ const liveEvents = [
     isVisible: true
   },
   {
-    monthDay: '11.15',
-    weekday: 'SUN',
+    monthDay: '10.20',
+    weekday: 'TUE',
     year: '2026',
-    title: 'サンプルライブ 02',
-    venue: '会場名が入ります',
-    area: '福岡市内',
-    start: '18:30',
-    appearance: '19:10〜19:30',
-    price: '料金情報が入ります',
-    coPerformers: '共演者A／共演者B／共演者C',
-    isVisible: false
+    title: 'ラウンジサウンズ',
+    venue: 'ブードゥーラウンジ',
+    area: '福岡市中央区舞鶴1-8-38 WAVE BLDG 4F',
+    start: '19:00',
+    appearance: '19:50〜20:15',
+    price: '1500円+1ドリンクオーダー',
+    coPerformers: 'イフマサカ/フアリナ/kiko(KIKOBAND)/鈴木卓也 司会とDJ)ボギー',
+    isVisible: true
   },
   {
     monthDay: '12.05',
