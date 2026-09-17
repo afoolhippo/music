@@ -199,94 +199,16 @@ h1 {
 }
 
 .song-section { background: var(--blue); text-align: center; }
-.song-section h2 { margin-bottom: 18px; }
+.song-section h2 { margin-bottom: 18px; font-size: clamp(2rem, 8vw, 3.4rem); }
 .song-intro { margin: 0 auto 32px; font-size: 1.05rem; line-height: 2; }
 
-.record-card {
-  width: min(84vw, 340px);
+.best-album-cover {
+  width: min(82vw, 420px);
   margin: 0 auto 30px;
-  padding: 22px;
   border: 3px solid var(--ink);
-  background: var(--pink);
   box-shadow: 8px 9px 0 var(--ink);
-  transform: none;
 }
-
-.record-card__player {
-  position: relative;
-  width: 100%;
-  height: 174px;
-  margin: 0 auto;
-}
-
-.record-card__disc {
-  position: relative;
-  width: 170px;
-  aspect-ratio: 1;
-  margin: 0 auto;
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-  background: repeating-radial-gradient(circle, #22323b 0 7px, #101a20 8px 10px);
-  animation: record-spin 5s linear infinite;
-}
-
-.record-card__disc span {
-  position: absolute;
-  inset: 34%;
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-  background: var(--yellow);
-}
-
-.record-card__disc span::after {
-  content: "";
-  position: absolute;
-  top: 14%;
-  left: 47%;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: var(--pink);
-}
-
-.record-card__arm {
-  position: absolute;
-  top: 9px;
-  left: calc(50% + 52px);
-  width: 18px;
-  height: 128px;
-  border: 3px solid var(--ink);
-  border-radius: 10px;
-  background: var(--paper);
-  transform: rotate(24deg);
-  transform-origin: 50% 9px;
-  z-index: 2;
-}
-
-.record-card__arm::before {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  width: 30px;
-  height: 30px;
-  border: 3px solid var(--ink);
-  border-radius: 50%;
-  background: var(--blue);
-  transform: translateX(-50%);
-}
-
-.record-card__arm i {
-  position: absolute;
-  bottom: -8px;
-  left: 50%;
-  width: 25px;
-  height: 17px;
-  border: 3px solid var(--ink);
-  border-radius: 4px;
-  background: var(--yellow);
-  transform: translateX(-50%) rotate(-8deg);
-}
+.best-album-cover img { display: block; width: 100%; height: auto; }
 
 .button {
   display: inline-block;
@@ -300,7 +222,7 @@ h1 {
 }
 
 .button:hover { transform: translate(2px, 2px); box-shadow: 3px 4px 0 var(--ink); }
-.button--youtube { background: var(--paper); }
+.button--bandcamp { background: var(--paper); }
 
 .cloud {
   position: absolute;
@@ -437,7 +359,6 @@ h1 {
 @keyframes drift { from { transform: translateX(-30px); } to { transform: translateX(115vw); } }
 @keyframes driftBack { from { transform: translateX(20px); } to { transform: translateX(-115vw); } }
 @keyframes blink { 50% { opacity: .25; } }
-@keyframes record-spin { to { transform: rotate(360deg); } }
 
 @media (min-width: 800px) {
   .hero__video { inset: 0; width: 100%; height: 100%; object-fit: contain; background: var(--mint); }

@@ -22,9 +22,9 @@ const works = [
   },
   {
     title: 'めん処やま志',
-    year: '2023',
+    year: '福岡県飯塚市にある蕎麦屋「やま志」さんのテーマソングを制作させていただきました。お店の温かな雰囲気を感じていただけたらうれしいです。',
     image: 'works003.jpg',
-    description: '飯塚にある蕎麦屋「やま志」さんのテーマソングを制作させて頂きました。',
+    description: '2023',
     youtube: 'https://youtu.be/ggLOTCnbL14',
     isVisible: true
   },
