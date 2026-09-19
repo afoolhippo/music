@@ -31,7 +31,7 @@ const works = [
   {
     title: '展望台カフェ',
     year: '2026',
-    image: 'works004.jpg',
+    image: 'works004.png',
     description: '福岡市植物園にある「展望台カフェ」さんのテーマソングを制作させていただきました。子どもたちの笑顔があふれる、明るい雰囲気をイメージした一曲です。',
     youtube: 'https://youtu.be/ggLOTCnbL14',
     isVisible: true
