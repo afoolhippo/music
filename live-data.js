@@ -3,19 +3,6 @@
 // isVisible: true で表示、false で非表示になります。
 const liveEvents = [
   {
-    monthDay: '10.10',
-    weekday: 'SUN',
-    year: '2026',
-    title: 'ノダニク大BBQ祭',
-    venue: '箱崎駅東口広場',
-    area: '福岡市東区筥松2-15',
-    start: '11:00～19:00',
-    appearance: '出演時間未定',
-    price: '入場無料',
-    coPerformers: '出演者調整中',
-    isVisible: true
-  },
-  {
     monthDay: '10.20',
     weekday: 'TUE',
     year: '2026',
