@@ -31,6 +31,20 @@ const liveEvents = [
   },
 
   {
+    monthDay: '11.12',
+    weekday: 'THU',
+    year: '2026',
+    title: 'Yatai de 3man Show!!',
+    venue: 'Soul Kitchen 博多屋台DON!',
+    area: '福岡市中央区春吉3-21-28ロマネスクリゾートクラブ西中洲7F',
+    start: '20:00',
+    appearance: '出演順未定',
+    price: '2,000円＋フード＆ドリンクオーダー',
+    coPerformers: '脱線ジョン／redbison',
+    isVisible: true
+  },
+
+  {
     monthDay: '12.05',
     weekday: 'SAT',
     year: '2026',
