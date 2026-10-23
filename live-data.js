@@ -3,20 +3,6 @@
 // isVisible: true で表示、false で非表示になります。
 const liveEvents = [
   {
-    monthDay: '10.20',
-    weekday: 'TUE',
-    year: '2026',
-    title: 'ラウンジサウンズ',
-    venue: 'ブードゥーラウンジ',
-    area: '福岡市中央区舞鶴1-8-38 WAVE BLDG 4F',
-    start: '19:00',
-    appearance: '19:50〜20:15',
-    price: '1500円+1ドリンクオーダー',
-    coPerformers: 'イフマサカ/フアリナ/kiko(KIKOBAND)/鈴木卓也 司会とDJ)ボギー',
-    isVisible: true
-  },
-
-  {
     monthDay: '10.24',
     weekday: 'SAT',
     year: '2026',
